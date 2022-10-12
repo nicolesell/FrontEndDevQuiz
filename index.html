@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel = "stylesheet" href = "style.css">
     <script src="script.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;400&display=swap" rel="stylesheet">
     <title>Document</title>
 </head>
 <body>
@@ -25,17 +26,22 @@
         -->
     <section class="form" id = "form">
         <div class="container">
-            <h1>Employee Information</h1>  
+            <h2>Employee Information</h2>  
             <form method="post" action="http://test">
-                <input type="text" name="name" placeholder="Name" required> <br>
+                <label for="name">Name</label> <br>
+                <input type="text" name="name" id="name" required><br>
 
-                <input type="text" name="emID" placeholder="Employee number" required> <br>
+                <label for="emID">Employee number</label> <br>
+                <input type="text" name="emID" id="empID" required> <br>
 
-                <input type="text" name="phone" placeholder="Phone number" required> <br>
+                <label for="phone">Phone mumber</label> <br>
+                <input type="text" name="phone" id="phone" required> <br>
 
-                <input type="text" name="address" placeholder="Address" required> <br>
+                <label for="address">Address</label> <br>
+                <input type="text" name="address" id="address" required> <br>
 
-                <input type="text" name="city" placeholder="City" required> 
+                <label for="city">City</label> <br>
+                <input type="text" name="city" id="city" required> 
 
                 <label for="state">State</label>
                 <select name="state">
@@ -91,10 +97,10 @@
                     <option value="Wyoming">Wyoming</option>
                 </select>
 
-                <input type="text" name="zip" placeholder="Zip Code" required> <br>
+                <label for="zip">Zip code</label> 
+                <input type="text" name="zip" id="zip" required> <br>
 
                 <input type="checkbox" id = "currentEmployee" name="currentEmployee" value="Current employee">
-
                 <label for="currentEmployee">Current Employee</label> <br>
 
                 <input type="submit" value="Submit" />
