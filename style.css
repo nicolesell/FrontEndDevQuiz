@@ -1,5 +1,4 @@
 *{
-    box-sizing: border-box;
     margin:0;
     padding:0;
     font-family: 'Raleway', sans-serif;
@@ -15,13 +14,34 @@ body{
     color: #777986;
 }
 
-h1{
+.main-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    height: 100vh;
+}
+
+.left-container {
+    background: url('work.jpg');
+    background-size:cover;
+    overflow: hidden;
+ }
+
+ .right-container{
+    padding: 30%;
+ }
+ 
+ h1{
+    text-shadow: 1px 1px 4px #141414;
+    padding-top:700px;
+    text-align: center;
     font-size: 64px;
-    font-weight: bolder;
+    font-weight: 800;
     color: #f3f4f8;
 }
 
 h2{
+    text-align: center;
     font-size: 40px;
     font-weight: bold;
     color: #2a93d5;

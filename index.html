@@ -12,23 +12,19 @@
     <title>Document</title>
 </head>
 <body>
-      <!--Section for welcome image-->
-
-    <section class="form" id = "form">
-        <div class="container">
-            <img src="work.jpg" alt="Employees on computer">
+    <div class = "main-container">
+        <!--div for welcome image-->
+        <div class="left-container">
+             <!--<img src="work.jpg" alt="Employees on computer">-->
             <h1>WELCOME</h1>
         </div>
-    </section> 
-
-      <!-- Section for form:
+        <!-- div for form:
          includes name, number, phone, address, city, state(combo box), zip,
           and current employee checkbox
         -->
-    <section class="form" id = "form">
-        <div class="container">
-            <h2>Employee Information</h2>  
-            <form method="post" action="http://test">
+        <div class="right-container">
+            <h2>Employee Information</h2>
+            <form method="post" action="http://test" id = "form">
                 <label for="name">Name</label> <br>
                 <input type="text" name="name" id="name" required><br>
 
@@ -107,6 +103,7 @@
                 <input type="submit" value="Submit" />
             </form>
         </div>
-    </section>
+
+    </div>
 </body>
 </html>
